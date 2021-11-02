@@ -1,0 +1,276 @@
+body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   margin: 0;
+   padding: 0;
+/*    max-width: 1920px; */
+   line-height: 1.5;
+
+   width: 100%;
+   max-width: 100%;
+   overflow-x: hidden;
+}
+
+/* #wrapper { 
+   width: 980px; 
+   overflow: show; 
+} */
+  
+
+.container {
+   max-width: 960px;
+   margin: auto;
+}
+
+/*Header*/
+
+header {
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+.header__inner {
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header__logo img {
+   margin: 10px 0;
+}
+
+.header__nav-item {
+   
+   padding: 14px;
+   text-transform: uppercase;
+   cursor: pointer;
+}
+
+.header__nav ul {
+   display: flex;
+   align-items: center;
+   list-style-type: none;
+}
+
+.header__nav a {
+   text-decoration: none;
+   color: black;
+}
+
+/*Promo*/
+
+.promo {
+   color: #fff;
+   max-width: 1920px;
+   height: 592px;
+   background-color:blueviolet;
+   background-image: url('img/promo/bg.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.promo__inner {
+   max-width: 1920px;
+   max-height: 1200px;
+   display: flex;
+}
+
+.promo__inner-model {
+   margin: 23px 0 -8px 0;
+   padding: 0px;
+   position: absolute;
+}
+
+#model-img2 {
+   position: relative;
+   left: 700px;
+   bottom: 3px;
+}
+
+.promo__inner-content {
+   text-align: center;
+   margin: 80px auto;
+   z-index: 1;
+}
+
+.promo__inner-subtitle {
+   font-weight: 300;
+   font-size: 34px;
+}
+
+.promo__inner-title {
+   font-size: 82px;
+   line-height: 1.1;
+   font-weight: 700;
+   padding: 0 13px;
+   display: block;
+   line-height: 1;
+   
+}
+
+.promo__inner-title::after {
+   content: '';
+   display: block;
+   height: 3px;
+   width: 460px;
+   background: #fff;
+   margin: 28px auto;
+}
+
+.promo__inner-sale {
+   font-size: 24px;
+}
+
+.promo__inner-price {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 0.5;
+}
+
+.promo__inner-price span {
+   font-weight: 700;
+   font-size: 48px;
+}
+
+.promo__inner-buttons {
+   margin-top: 55px;
+   display: flex;
+   justify-content: center;
+}
+
+.promo__inner-button {
+   border: 2px #fff solid;
+   text-decoration: none;
+   margin: 10px;
+   padding: 20px 16px;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+
+/*About*/
+
+.about__inner {
+   text-align: center;
+   margin: 30px 0;
+}
+
+.title {
+   font-weight: 700;
+   font-size: 36px;
+   text-transform: uppercase;
+   letter-spacing: -1px;
+   padding: 25px 0;
+   
+}
+
+.title::after{
+   content: '';
+   display: block;
+   height: 3px;
+   width: 90px;
+   background: #000;
+   margin: 15px auto 0 auto;
+}
+
+.about__text {
+   line-height: 30px;
+   letter-spacing: -1px;
+}
+
+
+/*Examples*/
+.examples__inner {
+   overflow-x: hidden;
+   display: flex;
+   margin: 0;
+   padding: 0;
+   /* flex-wrap: wrap; */
+}
+
+.examples__inner img {
+   max-height: 253px;
+}
+
+/*Size*/
+.size {
+   background-color: #776e73;
+   background-image: url('img/size/bg.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+}
+
+.size__inner{
+   text-align: center;
+}
+
+.size__grid{
+   display: grid;
+   grid: repeat(5, 40px)/repeat(7, 150px);
+  /*  gap: 10px 6px; */
+}
+
+/*Catalog*/
+
+.catalog__inner {
+   text-align: center;
+}
+
+.catalog__buttons {
+   display: flex;
+   justify-content: center;
+}
+
+.catalog__button {
+   border: none;
+   text-decoration: none;
+   margin: 0;
+   padding: 26px 43px;
+   text-transform: uppercase;
+   font-weight: 600;
+   background-color: #f3f3f3;
+}
+
+.catalog__button-active {
+   background-color: #ba0152;
+   color: #fff;
+}
+
+
+/*Order*/
+
+.order {
+   background-color: #f7f2f4;
+}
+
+.order__inner {
+   text-align: center;
+   padding: 80px 0;
+}
+
+.order__title {
+   font-size: 60px;
+}
+
+.order__items {
+   display: flex;
+   justify-content: space-between;
+}
+
+.order__item {
+   align-items: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 225px;
+   max-width: 220px;
+   overflow: hidden;
+}
+
+.order__item img {
+   max-width: 135px;
+   height: auto;
+ }
