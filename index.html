@@ -8,7 +8,6 @@
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Dr. Harness</title>
 </head>
 <body>
@@ -43,8 +42,8 @@
                <div class="promo__inner-sale">Любая модель со скидкой 50%</div>
                <div class="promo__inner-price">всего за <span>2990р.</span></div>
                <div class="promo__inner-buttons">
-                  <div class="promo__inner-button">повседневные портупеи</div>
-                  <div class="promo__inner-button">Эротические портупеи</div>
+                  <div class="promo__inner-button"><a href="#switch-1">повседневные портупеи</a></div>
+                  <div class="promo__inner-button"><a href="#switch-2">Эротические портупеи</a></div>
                </div>
             </div>
             <div class="promo__inner-model">
@@ -87,11 +86,11 @@
          <div class="size__inner">
             <div class="title">Таблица размеров</div>
             <div class="size__grid">
-               <span>Международный</span> <span>XS</span> <span>S</span> <span>M</span> <span>L</span> <span>XL</span> <span>XXL</span>        
-               <span>Роcсийский</span> <span>40</span> <span>42</span> <span>44/46</span> <span>48/50</span> <span>42/54</span> <span>56</span>
-               <span>Бедра (см)</span> <span>84-92</span> <span>92-95</span> <span>96-101</span> <span>102-108</span> <span>109-116</span> <span>117-121</span>
-               <span>Талия (см)</span> <span>60-65</span> <span>66-69</span> <span>70-77</span> <span>78-85</span> <span>86-95</span> <span>96-102</span>
-               <span>Грудь (см)</span> <span>74-80</span> <span>82-85</span> <span>86-93</span> <span>94-102</span> <span>103-113</span> <span>114-119</span>
+               <span>  Международный</span> <span> </span> <span><b>XS</b></span> <span><b>S</b></span> <span><b>M</b></span> <span><b>L</b></span> <span><b>XL</b></span> <span><b>XXL</b></span>        
+               <span>Роcсийский</span> <span> </span> <span><b>40</b></span> <span><b>42</b></span> <span><b>44/46</b></span> <span><b>48/50</b></span> <span><b>52/54</b></span> <span><b>56</b></span>
+               <span><b>Бедра (см)</b></span> <span> </span> <span>84-92</span> <span>92-95</span> <span>96-101</span> <span>102-108</span> <span>109-116</span> <span>117-121</span>
+               <span><b>Талия (см)</b></span> <span> </span> <span>60-65</span> <span>66-69</span> <span>70-77</span> <span>78-85</span> <span>86-95</span> <span>96-102</span>
+               <span><b>Грудь (см)</b></span> <span> </span> <span>74-80</span> <span>82-85</span> <span>86-93</span> <span>94-102</span> <span>103-113</span> <span>114-119</span>
                
             </div>
          </div>
@@ -101,10 +100,334 @@
    <div id="catalog" class="catalog">
       <div class="container">
          <div class="catalog__inner">
-            <div class="title">Каталог</div>
-            <div class="catalog__buttons">
-               <button class="catalog__button catalog__button-active">повседневные портупеи</button>
-               <button class="catalog__button">эротические протупеи</button>
+            <div class="tab"> 
+               
+               <div class="title">Каталог</div>
+               <div class="tabheader__switches">
+                  <button id="switch-1" class="tabheader__switch tabheader__switch-active">повседневные портупеи</button>
+                  <button id="switch-2" class="tabheader__switch">эротические протупеи</button>
+               </div>
+
+               <div class="tabcontent show">
+
+                  <div class="tabcontent__item">   <!--1-->
+                     <img class="tabcontent-sale" src="img/catalog/sale.png" alt="Скидка 53%">
+                     <img class="tabcontent-photo" src="img/catalog/1.png" alt="Портупея 'Пеппи'">
+                     <div class="tabcontent-name">
+                        Портупея “Пеппи”
+                     </div>
+                     <div class="tabcontent-sizes">
+                        <span class="xs">XS</span>
+                        <span class="s">S</span>
+                        <span class="m">M</span>
+                        <span class="l">L</span>
+                        <span class="xl">XL</span>
+                        <span class="xxl">XXL</span>
+                     </div>
+                     <div class="tabcontent-color">
+                        <img class="tabcontent-red" src="img/catalog/red.png" alt="красный цвет">
+                        <img class="tabcontent-black" src="img/catalog/black.png" alt="черный цвет">
+                     </div>
+                     <div class="tabcontent-price">
+                        <s>4990 р.</s>2990 р.
+                     </div>
+                     <div class="tabcontent-order">
+                        <button data-modal class="tabcontent-order-btn">заказать</button>
+                     </div>
+                  </div>
+
+                  <div class="tabcontent__item">  <!--2-->
+                     <img class="tabcontent-sale" src="img/catalog/sale.png" alt="Скидка 53%">
+                     <img class="tabcontent-photo" src="img/catalog/2.png" alt="Портупея 'Пеппи'">
+                     <div class="tabcontent-name">
+                        Портупея “Пеппи”
+                     </div>
+                     <div class="tabcontent-sizes">
+                        <span class="xs">XS</span>
+                        <span class="s">S</span>
+                        <span class="m">M</span>
+                        <span class="l">L</span>
+                        <span class="xl">XL</span>
+                        <span class="xxl">XXL</span>
+                     </div>
+                     <div class="tabcontent-color">
+                        <img class="tabcontent-red" src="img/catalog/red.png" alt="красный цвет">
+                        <img class="tabcontent-black" src="img/catalog/black.png" alt="черный цвет">
+                     </div>
+                     <div class="tabcontent-price">
+                        <s>4990 р.</s>2990 р.
+                     </div>
+                     <div class="tabcontent-order">
+                        <button data-modal class="tabcontent-order-btn">заказать</button>
+                     </div>
+                  </div>
+
+                  <div class="tabcontent__item">  <!--3-->
+                     <img class="tabcontent-sale" src="img/catalog/sale.png" alt="Скидка 53%">
+                     <img class="tabcontent-photo" src="img/catalog/3.png" alt="Портупея 'Пеппи'">
+                     <div class="tabcontent-name">
+                        Портупея “Пеппи”
+                     </div>
+                     <div class="tabcontent-sizes">
+                        <span class="xs">XS</span>
+                        <span class="s">S</span>
+                        <span class="m">M</span>
+                        <span class="l">L</span>
+                        <span class="xl">XL</span>
+                        <span class="xxl">XXL</span>
+                     </div>
+                     <div class="tabcontent-color">
+                        <img class="tabcontent-red" src="img/catalog/red.png" alt="красный цвет">
+                        <img class="tabcontent-black" src="img/catalog/black.png" alt="черный цвет">
+                     </div>
+                     <div class="tabcontent-price">
+                        <s>4990 р.</s>2990 р.
+                     </div>
+                     <div class="tabcontent-order">
+                        <button data-modal class="tabcontent-order-btn">заказать</button>
+                     </div>
+                  </div>
+
+                  <div class="tabcontent__item">  <!--4-->
+                     <img class="tabcontent-sale" src="img/catalog/sale.png" alt="Скидка 53%">
+                     <img class="tabcontent-photo" src="img/catalog/1.png" alt="Портупея 'Пеппи'">
+                     <div class="tabcontent-name">
+                        Портупея “Пеппи”
+                     </div>
+                     <div class="tabcontent-sizes">
+                        <span class="xs">XS</span>
+                        <span class="s">S</span>
+                        <span class="m">M</span>
+                        <span class="l">L</span>
+                        <span class="xl">XL</span>
+                        <span class="xxl">XXL</span>
+                     </div>
+                     <div class="tabcontent-color">
+                        <img class="tabcontent-red" src="img/catalog/red.png" alt="красный цвет">
+                        <img class="tabcontent-black" src="img/catalog/black.png" alt="черный цвет">
+                     </div>
+                     <div class="tabcontent-price">
+                        <s>4990 р.</s>2990 р.
+                     </div>
+                     <div class="tabcontent-order">
+                        <button data-modal class="tabcontent-order-btn">заказать</button>
+                     </div>
+                  </div>
+
+                  <div class="tabcontent__item">  <!--5-->
+                     <img class="tabcontent-sale" src="img/catalog/sale.png" alt="Скидка 53%">
+                     <img class="tabcontent-photo" src="img/catalog/2.png" alt="Портупея 'Пеппи'">
+                     <div class="tabcontent-name">
+                        Портупея “Пеппи”
+                     </div>
+                     <div class="tabcontent-sizes">
+                        <span class="xs">XS</span>
+                        <span class="s">S</span>
+                        <span class="m">M</span>
+                        <span class="l">L</span>
+                        <span class="xl">XL</span>
+                        <span class="xxl">XXL</span>
+                     </div>
+                     <div class="tabcontent-color">
+                        <img class="tabcontent-red" src="img/catalog/red.png" alt="красный цвет">
+                        <img class="tabcontent-black" src="img/catalog/black.png" alt="черный цвет">
+                     </div>
+                     <div class="tabcontent-price">
+                        <s>4990 р.</s>2990 р.
+                     </div>
+                     <div class="tabcontent-order">
+                        <button data-modal class="tabcontent-order-btn">заказать</button>
+                     </div>
+                  </div>
+
+                  <div class="tabcontent__item">  <!--6-->
+                     <img class="tabcontent-sale" src="img/catalog/sale.png" alt="Скидка 53%">
+                     <img class="tabcontent-photo" src="img/catalog/3.png" alt="Портупея 'Пеппи'">
+                     <div class="tabcontent-name">
+                        Портупея “Пеппи”
+                     </div>
+                     <div class="tabcontent-sizes">
+                        <span class="xs">XS</span>
+                        <span class="s">S</span>
+                        <span class="m">M</span>
+                        <span class="l">L</span>
+                        <span class="xl">XL</span>
+                        <span class="xxl">XXL</span>
+                     </div>
+                     <div class="tabcontent-color">
+                        <img class="tabcontent-red" src="img/catalog/red.png" alt="красный цвет">
+                        <img class="tabcontent-black" src="img/catalog/black.png" alt="черный цвет">
+                     </div>
+                     <div class="tabcontent-price">
+                        <s>4990 р.</s>2990 р.
+                     </div>
+                     <div class="tabcontent-order">
+                        <button data-modal class="tabcontent-order-btn">заказать</button>
+                     </div>
+                  </div>   <!-- /1 страница -->
+
+               </div>
+
+               <div class="tabcontent">
+               
+                  <div class="tabcontent__item">   <!--1-->
+                     <img class="tabcontent-sale" src="img/catalog/sale.png" alt="Скидка 53%">
+                     <img class="tabcontent-photo" src="img/catalog/3.png" alt="Портупея 'Пеппи'">
+                     <div class="tabcontent-name">
+                        Портупея “Пеппи”
+                     </div>
+                     <div class="tabcontent-sizes">
+                        <span class="xs">XS</span>
+                        <span class="s">S</span>
+                        <span class="m">M</span>
+                        <span class="l">L</span>
+                        <span class="xl">XL</span>
+                        <span class="xxl">XXL</span>
+                     </div>
+                     <div class="tabcontent-color">
+                        <img class="tabcontent-red" src="img/catalog/red.png" alt="красный цвет">
+                        <img class="tabcontent-black" src="img/catalog/black.png" alt="черный цвет">
+                     </div>
+                     <div class="tabcontent-price">
+                        <s>4990 р.</s>2990 р.
+                     </div>
+                     <div class="tabcontent-order">
+                        <button data-modal class="tabcontent-order-btn">заказать</button>
+                     </div>
+                  </div>
+
+                  <div class="tabcontent__item">  <!--2-->
+                     <img class="tabcontent-sale" src="img/catalog/sale.png" alt="Скидка 53%">
+                     <img class="tabcontent-photo" src="img/catalog/2.png" alt="Портупея 'Пеппи'">
+                     <div class="tabcontent-name">
+                        Портупея “Пеппи”
+                     </div>
+                     <div class="tabcontent-sizes">
+                        <span class="xs">XS</span>
+                        <span class="s">S</span>
+                        <span class="m">M</span>
+                        <span class="l">L</span>
+                        <span class="xl">XL</span>
+                        <span class="xxl">XXL</span>
+                     </div>
+                     <div class="tabcontent-color">
+                        <img class="tabcontent-red" src="img/catalog/red.png" alt="красный цвет">
+                        <img class="tabcontent-black" src="img/catalog/black.png" alt="черный цвет">
+                     </div>
+                     <div class="tabcontent-price">
+                        <s>4990 р.</s>2990 р.
+                     </div>
+                     <div class="tabcontent-order">
+                        <button data-modal class="tabcontent-order-btn">заказать</button>
+                     </div>
+                  </div>
+
+                  <div class="tabcontent__item">  <!--3-->
+                     <img class="tabcontent-sale" src="img/catalog/sale.png" alt="Скидка 53%">
+                     <img class="tabcontent-photo" src="img/catalog/1.png" alt="Портупея 'Пеппи'">
+                     <div class="tabcontent-name">
+                        Портупея “Пеппи”
+                     </div>
+                     <div class="tabcontent-sizes">
+                        <span class="xs">XS</span>
+                        <span class="s">S</span>
+                        <span class="m">M</span>
+                        <span class="l">L</span>
+                        <span class="xl">XL</span>
+                        <span class="xxl">XXL</span>
+                     </div>
+                     <div class="tabcontent-color">
+                        <img class="tabcontent-red" src="img/catalog/red.png" alt="красный цвет">
+                        <img class="tabcontent-black" src="img/catalog/black.png" alt="черный цвет">
+                     </div>
+                     <div class="tabcontent-price">
+                        <s>4990 р.</s>2990 р.
+                     </div>
+                     <div class="tabcontent-order">
+                        <button data-modal class="tabcontent-order-btn">заказать</button>
+                     </div>
+                  </div>
+
+                  <div class="tabcontent__item">  <!--4-->
+                     <img class="tabcontent-sale" src="img/catalog/sale.png" alt="Скидка 53%">
+                     <img class="tabcontent-photo" src="img/catalog/3.png" alt="Портупея 'Пеппи'">
+                     <div class="tabcontent-name">
+                        Портупея “Пеппи”
+                     </div>
+                     <div class="tabcontent-sizes">
+                        <span class="xs">XS</span>
+                        <span class="s">S</span>
+                        <span class="m">M</span>
+                        <span class="l">L</span>
+                        <span class="xl">XL</span>
+                        <span class="xxl">XXL</span>
+                     </div>
+                     <div class="tabcontent-color">
+                        <img class="tabcontent-red" src="img/catalog/red.png" alt="красный цвет">
+                        <img class="tabcontent-black" src="img/catalog/black.png" alt="черный цвет">
+                     </div>
+                     <div class="tabcontent-price">
+                        <s>4990 р.</s>2990 р.
+                     </div>
+                     <div class="tabcontent-order">
+                        <button data-modal class="tabcontent-order-btn">заказать</button>
+                     </div>
+                  </div>
+
+                  <div class="tabcontent__item">  <!--5-->
+                     <img class="tabcontent-sale" src="img/catalog/sale.png" alt="Скидка 53%">
+                     <img class="tabcontent-photo" src="img/catalog/2.png" alt="Портупея 'Пеппи'">
+                     <div class="tabcontent-name">
+                        Портупея “Пеппи”
+                     </div>
+                     <div class="tabcontent-sizes">
+                        <span class="xs">XS</span>
+                        <span class="s">S</span>
+                        <span class="m">M</span>
+                        <span class="l">L</span>
+                        <span class="xl">XL</span>
+                        <span class="xxl">XXL</span>
+                     </div>
+                     <div class="tabcontent-color">
+                        <img class="tabcontent-red" src="img/catalog/red.png" alt="красный цвет">
+                        <img class="tabcontent-black" src="img/catalog/black.png" alt="черный цвет">
+                     </div>
+                     <div class="tabcontent-price">
+                        <s>4990 р.</s>2990 р.
+                     </div>
+                     <div class="tabcontent-order">
+                        <button data-modal class="tabcontent-order-btn">заказать</button>
+                     </div>
+                  </div>
+
+                  <div class="tabcontent__item">  <!--6-->
+                     <img class="tabcontent-sale" src="img/catalog/sale.png" alt="Скидка 53%">
+                     <img class="tabcontent-photo" src="img/catalog/1.png" alt="Портупея 'Пеппи'">
+                     <div class="tabcontent-name">
+                        Портупея “Пеппи”
+                     </div>
+                     <div class="tabcontent-sizes">
+                        <span class="xs">XS</span>
+                        <span class="s">S</span>
+                        <span class="m">M</span>
+                        <span class="l">L</span>
+                        <span class="xl">XL</span>
+                        <span class="xxl">XXL</span>
+                     </div>
+                     <div class="tabcontent-color">
+                        <img class="tabcontent-red" src="img/catalog/red.png" alt="красный цвет">
+                        <img class="tabcontent-black" src="img/catalog/black.png" alt="черный цвет">
+                     </div>
+                     <div class="tabcontent-price">
+                        <s>4990 р.</s>2990 р.
+                     </div>
+                     <div class="tabcontent-order">
+                        <button data-modal class="tabcontent-order-btn">заказать</button>
+                     </div>
+                  </div>   
+
+               </div>   <!-- /2 страница -->
+
             </div>
          </div>
       </div>
@@ -137,5 +460,51 @@
    </div>
 
 
+   <div class="modal hide">
+      <div class="modal__dialog">
+          <div class="modal__content">
+              <div class="modal__header">
+                  <span class="modal__title">Выберите размер</span>
+                  <span class="modal__close" data-close>x</span>
+               </div>
+               <div class="modal__body">
+
+
+                  <div class="tabcontent__item">   <!--Пример эл-та-->
+                     <img class="tabcontent-sale" src="img/catalog/sale.png" alt="Скидка 53%">
+                     <img class="tabcontent-photo" src="img/catalog/1.png" alt="Портупея 'Пеппи'">
+                     <div class="tabcontent-name">
+                        Портупея “Пеппи”
+                     </div>
+                     <div class="tabcontent-sizes">
+                        <span class="xs">XS</span>
+                        <span class="s">S</span>
+                        <span class="m">M</span>
+                        <span class="l">L</span>
+                        <span class="xl">XL</span>
+                        <span class="xxl">XXL</span>
+                     </div>
+                     <div class="tabcontent-color">
+                        <img class="tabcontent-red" src="img/catalog/red.png" alt="красный цвет">
+                        <img class="tabcontent-black" src="img/catalog/black.png" alt="черный цвет">
+                     </div>
+                     <div class="tabcontent-price">
+                        <s>4990 р.</s>2990 р.
+                     </div>
+                     <div class="tabcontent-order">
+                        <button class="tabcontent-order-btn">заказать</button>
+                     </div>
+                  </div>
+
+
+               </div>
+          </div>
+      </div>
+  </div>
+
+  
+
+
+   <script src="js/script.js"></script>
 </body>
 </html>
